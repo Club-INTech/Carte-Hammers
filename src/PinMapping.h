@@ -15,8 +15,6 @@
 
 #include "Arduino.h"
 
-typedef int pin;
-
-constexpr pin hammer_pins[] = {6, 7, 8, 9, 10};
+constexpr int hammer_pins[] = {6, 7, 8, 9, 10};
 
 #endif //CARTE_HAMMERS_PINMAPPING_H
