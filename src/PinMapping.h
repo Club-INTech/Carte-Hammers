@@ -1,0 +1,8 @@
+//
+// Created by tsimafei on 15/12/2020.
+//
+
+#ifndef CARTE_HAMMERS_PINMAPPING_H
+#define CARTE_HAMMERS_PINMAPPING_H
+
+#endif //CARTE_HAMMERS_PINMAPPING_H
