@@ -1,6 +1,6 @@
 #include "HammerServo.h"
 
-std::array<Servo, sizeof(hammer_pins)> hammer_servos;
+std::array<Servo, hammer_nbr> hammer_servos;
 
 // Initialiser 'hammer_servos' en associant chaque élément du tableau à un servomoteurs
 void initialize_hammer_servos() {

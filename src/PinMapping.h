@@ -16,5 +16,6 @@
 #include "Arduino.h"
 
 constexpr int hammer_pins[] = {6, 7, 8, 9, 10};
+constexpr auto hammer_nbr = sizeof(hammer_pins) / sizeof(*hammer_pins);
 
 #endif //CARTE_HAMMERS_PINMAPPING_H

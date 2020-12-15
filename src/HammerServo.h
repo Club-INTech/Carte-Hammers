@@ -13,7 +13,7 @@
 
 #include "PinMapping.h"
 
-extern std::array<Servo, sizeof(hammer_pins)> hammer_servos;
+extern std::array<Servo, hammer_nbr> hammer_servos;
 
 void initialize_hammer_servos();
 
