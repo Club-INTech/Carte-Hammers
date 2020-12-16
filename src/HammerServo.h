@@ -9,9 +9,16 @@
 #ifndef CARTE_HAMMERS_HAMMER_SERVO_H
 #define CARTE_HAMMERS_HAMMER_SERVO_H
 
+#include <array>
+
 #include <Servo.h>
 
 #include "PinMapping.h"
+
+// Angles des marteaux par rapport au plan horizontal lorsqu'ils sont levés et
+// baissés (en degré)
+constexpr int raised_hammer_angle_dg = 0;
+constexpr int lowered_hammer_angle_dg = -90;
 
 extern std::array<Servo, hammer_nbr> hammer_servos;
 

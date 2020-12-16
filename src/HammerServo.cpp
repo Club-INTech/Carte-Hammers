@@ -7,6 +7,6 @@ void initialize_hammer_servos() {
   for(auto i = 0; i < hammer_servos.size(); i++) {
     pinMode(hammer_pins[i], OUTPUT);
     hammer_servos[i].attach(hammer_pins[i]);
-    hammer_servos[i].write(hammer_lift_angle);
+    hammer_servos[i].write(raised_hammer_angle);
   }
 }
