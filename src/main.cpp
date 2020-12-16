@@ -12,18 +12,25 @@
 using namespace I2CC;
 
 void setup() {
-  // Initialiser l'interface avec les servomoteurs
-  initialize_hammer_servos();
+    // Initialiser l'interface avec les servomoteurs
+    initialize_hammer_servos();
 
-  // Enregistrer les callback dans I2CC
-  int i = 0;
-  registerRPC(set_hammer_angle, i++);
-  registerRPC(raise_hammer, i++);
-  registerRPC(lower_hammer, i++);
+    // Enregistrer les callback dans I2CC
+    int i = 0;
+    registerRPC(set_hammer_angle, i++);
+    registerRPC(raise_hammer, i++);
+    registerRPC(lower_hammer, i++);
 
-  // Rejoindre le bus I2C en tant qu'esclave et se mettre en standby
-  #pragma message "TODO : spécifier l'addresse de chaque carte sur le bus I2C dans un fichier global"
-  startI2CC(0);
+    // Rejoindre le bus I2C en tant qu'esclave et se mettre en standby
+    #pragma message "TODO : spécifier l'addresse de chaque carte sur le bus I2C dans un fichier global"
+
+#if defined(CARTE_HAMMERS)
+    startI2CC(1);
+#endif
+
+#if defined(CARTE_PUMPS)
+    startI2CC(2);
+#endif
 }
 
 void loop() {}
