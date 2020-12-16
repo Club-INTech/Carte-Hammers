@@ -9,8 +9,6 @@
 #ifndef CARTE_HAMMERS_HAMMER_SERVO_H
 #define CARTE_HAMMERS_HAMMER_SERVO_H
 
-#include <array>
-
 #include <Servo.h>
 
 #include "PinMapping.h"
@@ -20,7 +18,7 @@
 constexpr int raised_hammer_angle_dg = 0;
 constexpr int lowered_hammer_angle_dg = -90;
 
-extern std::array<Servo, hammer_nbr> hammer_servos;
+extern Servo hammer_servos[hammer_nbr];
 
 void initialize_hammer_servos();
 

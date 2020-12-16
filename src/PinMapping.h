@@ -20,7 +20,7 @@
 constexpr int hammer_pins[] = {6, 7, 8, 9, 10};
 constexpr auto hammer_nbr = sizeof(hammer_pins) / sizeof(*hammer_pins);
 constexpr int valve_pins[] = {A2, 0, 2, 4};
-constexpr auto valve_nbr = sizeof(valve_nbr) / sizeof(*valve_nbr);
+constexpr auto valve_nbr = sizeof(valve_pins) / sizeof(*valve_pins);
 constexpr int pump_pins[] = {A3, 1, 3, 5};
 constexpr auto pump_nbr = sizeof(pump_pins) / sizeof(*pump_pins);
 
