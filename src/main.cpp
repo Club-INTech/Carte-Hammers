@@ -10,9 +10,16 @@
 #include "Orders.h"
 #include "PumpsServo.h"
 
+#include "OrderWrapper.hpp"
+
 using namespace I2CC;
 
+int test(int a) { return 0; }
+
 void setup() {
+
+  BufferedData a(0);
+  WRAP_ORDER(test)(a);
 
 #if defined(CARTE_HAMMERS)
   // Initialiser l'interface avec l'hardware

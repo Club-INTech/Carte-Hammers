@@ -40,6 +40,8 @@ BufferedData* toggle_valve(BufferedData& args) {
   getData(state, &args);
 
   digitalWrite(valve_pins[valve_index], state);
+
+  return nullptr;
 }
 
 BufferedData* suck(BufferedData& args) {
@@ -49,4 +51,6 @@ BufferedData* suck(BufferedData& args) {
   getData(state, &args);
 
   digitalWrite(pump_pins[pump_index], state);
+
+  return nullptr;
 }
