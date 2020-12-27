@@ -5,7 +5,9 @@
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/libraries/Wire/src
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/cores/MiniCore
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/variants/standard
+-I/home/utilisateur/Documents/tsp/1a/gate/Carte-Hammers/.pio/libdeps/ATmega328P/Servo@src-408ad63a9504b6c51de2fcaf865b6fbe/src
 -I/home/utilisateur/Documents/tsp/1a/gate/Carte-Hammers/.pio/libdeps/ATmega328P/Servo@src-ba5e889fbf9aeee7a52e47d6ad580f9a/src
+-I/home/utilisateur/Documents/tsp/1a/gate/Carte-Hammers/.pio/libdeps/ATmega328P/Servo@src-d36137c2fffee0cb52b158569803bd79/src
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/libraries/AVR_examples/src
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/libraries/EEPROM/src
 -I/home/utilisateur/.platformio/packages/framework-arduino-avr-minicore/libraries/Optiboot_flasher/src
