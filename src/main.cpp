@@ -5,18 +5,16 @@
 #include <Arduino.h>
 #include <Servo.h>
 
+#include "external.hpp"
 #include "HammerServo.h"
 #include "I2CC.h"
 #include "Orders.h"
 #include "PumpsServo.h"
 
-// Depuis le code du master
-// #include <external.hpp>
-
-using namespace I2CC;
 
 void setup() {
-  // using namespace external;
+  using namespace I2CC;
+  using namespace external;
 
 #if defined(CARTE_HAMMERS)
   // Initialiser l'interface avec l'hardware

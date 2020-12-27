@@ -73,7 +73,7 @@ BufferedData* unfold(R(function)(Args...), BufferedData& buffered_data) {
   if (putData(return_value, return_buffer_ptr)) {
     return return_buffer_ptr;
   } else {
-    free(return_buffer_ptr); //undefined reference to delete(void*, unsigned int)
+    delete return_buffer_ptr; //undefined reference to delete(void*, unsigned int)
     return nullptr;
   }
 }
