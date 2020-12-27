@@ -5,10 +5,10 @@
 #include "Orders.h"
 
 BufferedData* set_hammer_angle(BufferedData& args) {
-  float   setpoint_dg;
   uint8_t servo_index;
-  getData(setpoint_dg, &args);
+  float   setpoint_dg;
   getData(servo_index, &args);
+  getData(setpoint_dg, &args);
 
   hammer_servos[servo_index].write(setpoint_dg);
 

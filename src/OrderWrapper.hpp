@@ -29,6 +29,8 @@
 //
 
 #pragma once
+#pragma message "Faire des tests pour savoir si la RVO a bien lieu correctement " \
+                "et si tout type de fonction peut être wrappé"
 
 // decay maison, parce que j'ai la flemme d'inclure la bibliothèque standard.
 // C'est légèrement moins bien que std::decay, parce que ça fait juste sauter
@@ -60,7 +62,7 @@ auto forward_arguments(BufferedData& buffered_data) {
 // Extraire les arguments de 'buffered_data' pour les passer à 'function'
 // Si les données ont bien été insérées dans le BufferedData de retour, un
 // pointeur valide est retourné. Sinon, la fonction retourne nullptr.
-// Si R = void, la fonction retourne nullptr.
+// Si R = void, la fonction retourne nullptr systèmatiquement.
 using I2CC::putData;
 template<typename R, typename... Args>
 BufferedData* unfold(R(function)(Args...), BufferedData& buffered_data) {
