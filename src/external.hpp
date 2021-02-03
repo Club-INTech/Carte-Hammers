@@ -9,8 +9,8 @@
 
 namespace external {
 
-constexpr uint8_t hammers_id = 1;
-constexpr uint8_t pumps_id = 2;
+constexpr uint8_t hammers_id = 0;
+constexpr uint8_t pumps_id = 0;
 
 constexpr uint8_t set_hammer_angle_id = 0;
 constexpr uint8_t raise_hammer_id = 1;
