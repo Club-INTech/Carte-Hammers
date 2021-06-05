@@ -16,7 +16,8 @@
 // Angles des marteaux par rapport au plan horizontal lorsqu'ils sont levés et
 // baissés (en degré)
 constexpr int raised_hammer_angle_dg = 0;
-constexpr int lowered_hammer_angle_dg = -90;
+constexpr int lowered_hammer_angle_dg = 60;
+constexpr unsigned long swing_duration = 250;
 
 extern Servo hammer_servos[hammer_nbr];
 

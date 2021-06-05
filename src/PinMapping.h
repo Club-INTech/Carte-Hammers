@@ -17,7 +17,7 @@
 
 #include "Arduino.h"
 
-constexpr int hammer_pins[] = {6, 7, 8, 9, 10};
+constexpr int hammer_pins[] = {3, 5, 6, 10, 9, 11};
 constexpr auto hammer_nbr = sizeof(hammer_pins) / sizeof(*hammer_pins);
 constexpr int valve_pins[] = {A2, 0, 2, 4};
 constexpr auto valve_nbr = sizeof(valve_pins) / sizeof(*valve_pins);
