@@ -10,8 +10,7 @@ void initialize_hammer_servos() {
     hammer_servos[i].attach(hammer_pins[i]);
     hammer_servos[i].write(lowered_hammer_angle_dg);
   }
-
-  delay(swing_duration);
-
-  for (auto& servo : hammer_servos) servo.write(raised_hammer_angle_dg);
+#ifdef REVERSED
+    hammer_servos[0].write(raised_hammer_angle_dg + 5);
+#endif
 }

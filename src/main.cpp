@@ -34,7 +34,6 @@ void setup() {
   initialize_pumps();
 
   // Enregistrer les callbacks dans I2CC
-  registerRPC(toggle_valve, toggle_valve_id);
   registerRPC(suck, suck_id);
 
   // Rejoindre le bus I2C en tant qu'esclave et se mettre en standby

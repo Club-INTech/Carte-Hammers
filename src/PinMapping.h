@@ -19,9 +19,9 @@
 
 constexpr int hammer_pins[] = {3, 5, 6, 10, 9, 11};
 constexpr auto hammer_nbr = sizeof(hammer_pins) / sizeof(*hammer_pins);
-constexpr int valve_pins[] = {A2, 0, 2, 4};
+constexpr int valve_pins[] = {0, 2, 4, 6};
 constexpr auto valve_nbr = sizeof(valve_pins) / sizeof(*valve_pins);
-constexpr int pump_pins[] = {A3, 1, 3, 5};
+constexpr int pump_pins[] = {1, 3, 5, 7};
 constexpr auto pump_nbr = sizeof(pump_pins) / sizeof(*pump_pins);
 
 #endif //CARTE_HAMMERS_PINMAPPING_H
