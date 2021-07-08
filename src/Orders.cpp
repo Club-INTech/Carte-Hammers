@@ -46,7 +46,6 @@ BufferedData* suck(BufferedData& args) {
   getData(state, &args);
 
   digitalWrite(pump_pins[pump_index], state);
-  digitalWrite(pump_pins[pump_index], !state);
 
   return nullptr;
 }
